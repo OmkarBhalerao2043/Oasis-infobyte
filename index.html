@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1 align="center">Calculator using <br>Html,Javascript,css</h1>
+    <table >
+        <tr>
+            <td colspan="4"><input type="text" id="result1"></td>
+        </tr>
+
+        <tr>
+            <td align="center"> <input type="button" value="c" onclick="result1.value= result1.value.toString().slice(0,-1)" id="num"></td>
+            <td align="center"> <input type="button" value="%" onclick="persent()" id="num"></td>
+            <td align="center"> <input type="button" value="^" onclick="squre()" id="num"></td>
+            <td align="center"> <input type="button" value="AC" onclick="clr()" id="num"></td>
+        </tr>
+        
+        <tr>
+            <td align="center"> <input type="button" value="7"  onclick="insertvalue(7)" ></td>
+            <td align="center"> <input type="button" value="8"  onclick="insertvalue(8)" ></td>
+            <td align="center"> <input type="button" value="9"  onclick="insertvalue(9)" ></td>
+            <td align="center"> <input type="button" value="/"  onclick="insertvalue('/')"></td>
+        </tr>
+
+        <tr>
+            <td align="center"> <input type="button" value="4"  onclick="insertvalue(4)" ></td>
+            <td align="center"> <input type="button" value="5"  onclick="insertvalue(5)" ></td>
+            <td align="center"> <input type="button" value="6"  onclick="insertvalue(6)" ></td>
+            <td align="center"> <input type="button" value="*"  onclick="insertvalue('*')" ></td>
+        </tr>
+
+        <tr>
+            <td align="center"> <input type="button" value="1"  onclick="insertvalue(1)" ></td>
+            <td align="center"> <input type="button" value="2"  onclick="insertvalue(2)" ></td>
+            <td align="center"> <input type="button" value="3"  onclick="insertvalue(3)" ></td>
+            <td align="center"> <input type="button" value="-"  onclick="insertvalue('-')" ></td>
+        </tr>
+
+        <tr>
+            <td align="center"> <input type="button" value="0"  onclick="insertvalue(0)" ></td>
+            <td align="center"> <input type="button" value="."  onclick="insertvalue('.')" ></td>
+            <td align="center"> <input type="button" value="+"  onclick="insertvalue('+')" ></td>
+            <td align="center"> <input type="button" value="="  onclick="equal()" ></td>
+        </tr>
+
+    </table>
+    <script src="file.js" defer></script>
+</body>
+</html>
